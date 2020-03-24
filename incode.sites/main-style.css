@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 body{
 	margin:0;
 }
@@ -8,11 +9,20 @@ body{
 .fat{
 	width:100%;
 }
-.h-20{
-	height: 20vh;
+.h-5{
+	height: 5vh;
+}
+.h-7{
+	height: 7vh;
 }
 .h-10{
 	height: 10vh;
+}
+.h-15{
+	height: 15vh;
+}
+.h-20{
+	height: 20vh;
 }
 .h-30{
 	height: 30vh;
@@ -20,11 +30,23 @@ body{
 .h-40{
 	height: 40vh;
 }
+.h-75{
+	height: 75vh;
+}
+.h-80{
+	height: 80vh;
+}
+.h-85{
+	height: 85vh;
+}
 .text-center{
 	text-align: center;
 }
 #first{
 	background-color: rgb(253, 165, 2);
+}
+#third{
+	background-color: rgb(2, 149, 253);
 }
 a{
 	text-decoration: none;
@@ -51,6 +73,10 @@ span.anim-2{
 span.anim-3{
 	animation-delay: 0.8s;
 	color: #d6ff00c9;
+}
+.box-title-3{
+	display: flex;
+	justify-content: center;
 }
 
 @media (min-width: 100px){
@@ -108,13 +134,93 @@ span.anim-3{
   		animation-iteration-count: infinite;
 	}
 	h2.anim-1{
-		animation-delay: 0.5s;
+		animation-delay: 1s;
   		-webkit-animation-fill-mode: forwards;
 	}
 	h2.anim-2{
+		animation-delay: 1.7s;
+	}
+	h2.anim-3{
+		animation-delay: 2.4s;
+	}
+
+
+	h1.title-3{
+		font-size: 7vh;
+		font-family: 'Nunito';
+		text-align: center;
+		color:yellow;
+	}
+
+	.price-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.price-box{
+		height: 35vh;
+		width: 80vw;
+		border-radius:3vh;
+		background-color: white; 
+	}
+	h1.price-title{
+		text-align: center;
+		color: #0b229a;
+		font-size: 3vh;
+		font-family: 'Nunito';
+	}
+	ul.price-box-text{
+		font-size:2vh;
+		font-family: 'Montserrat', sans-serif;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		margin: 0;
+		margin-left:3vw;
+	}
+	div.price{
+		font-size: 2.5vh;
+		font-family: 'Montserrat', sans-serif;
+		display: flex;
+		justify-content:flex-end;
+		align-items: center;
+		color:#00199a;
+		padding-right: 3vw;
+	}
+	li.price-box-text{
+		animation-name: slide;
+  		animation-timing-function: ease;
+  		animation-duration: 10s;
+  		animation-iteration-count: infinite;
+	}
+	li.anim-1{
+		animation-delay: 0s;
+		-webkit-animation-fill-mode: forwards;
+	}
+	li.anim-2{
 		animation-delay: 1.2s;
-	}h2.anim-3{
-		animation-delay: 1.9s;
+	}
+	li.anim-3{
+		animation-delay: 2.4s;
+	}
+	li.anim-4{
+		animation-delay: 3.6s;
+	}
+	li.anim-5{
+		animation-delay: 4.8s;
+	}
+	li.anim-6{
+		animation-delay: 6s;
+	}
+
+	div.connect-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.connect{
+		font-size: 3vh;
 	}
 }
 
@@ -167,4 +273,20 @@ span.anim-3{
 		color:rgb(253, 165, 2);
 	}
 
+}
+
+@keyframes slide{
+0%{
+	margin-left: 0vw;
+}
+10%{
+	margin-left:5vw; 
+	color:rgb(253, 165, 2);
+}
+20%{
+	margin-left: 0vw;
+}
+100%{
+	margin-left: 0vw;
+}
 }
