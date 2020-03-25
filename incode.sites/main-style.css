@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+html {
+	scroll-behavior: smooth;
+}
 body{
+	margin:0;
+}
+h1,h2,h3,p{
 	margin:0;
 }
 .page{
@@ -45,8 +51,17 @@ body{
 #first{
 	background-color: rgb(253, 165, 2);
 }
+#second{
+	background-color: white;
+}
 #third{
 	background-color: rgb(2, 149, 253);
+}
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:0;
 }
 a{
 	text-decoration: none;
@@ -77,9 +92,38 @@ span.anim-3{
 .box-title-3{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
-@media (min-width: 100px){
+
+/*swiper*/
+
+.swiper-container {
+
+  height: 85%;
+  margin:0;
+  border:3px solid darkblue;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 	.logo-space{
 		display:flex;
 		justify-content: center;
@@ -150,6 +194,12 @@ span.anim-3{
 		font-family: 'Nunito';
 		text-align: center;
 		color:yellow;
+	}
+	h1.title-2{
+		font-size: 7vh;
+		font-family: 'Nunito';
+		text-align: center;
+		color:rgb(253, 165, 2);
 	}
 
 	.price-container{
@@ -222,7 +272,145 @@ span.anim-3{
 	.connect{
 		font-size: 3vh;
 	}
+
+
+	
+
+
+	/*.second_container .container_1 .title{
+	border: 1px solid black;
+}*/
+
+.second_container .container_1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.second_container .container_1 p{
+	font-size: 7vh;
+	font-family: 'Nunito';
+	text-align: center;
+	color: rgb(2, 149, 253);
+}
+
+
+.second_container .container_1 p:hover{
+	font-size: 8vh;
+	text-align: center;
+	color: rgb(0, 94, 174);
+	transition: 0.5s;
+}
+
+.second_container .container_2{
+	height: 75%;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5vh;
+	padding: 0vh 14vw;
+	padding-bottom: 8vh;
+	
+}
+
+.second_container .container_2 .block{
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+	grid-template-rows: 1fr
+}
+
+	.second_container .container_2 .block{
+		display: flex;
+		flex-direction: column;
+	}
+	.second_container .container_2 .block .block_1{
+		height: 30%;
+		font-size: 2vh;
+	}
+
+
+.second_container .container_2 .block:hover{
+	opacity: 0.8;
+}
+
+.second_container .container_2 .block .block_1{
+	background: orange;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 2vh;
+}
+
+.second_container .container_2 .block .block_1 p{
+	text-align: center;
+	color: white;
+}	
+.second_container .container_2 .block .img{
+	display: flex;
+	justify-content: center;
+	padding: 15%;
+}
+
+.second_container .container_2 .block img{
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+/*second page - end*/
+
+
+
+
+
+
+
+
+
+	@media(min-device-width: 1500px){
+		.button-container-1{
+			width:50%;
+		}
+	}
+
+	@media(min-device-width: 1100px) and (max-device-width:1499px){
+		.button-container-1{
+			width:60%;
+		}
+		.swiper-container {
+			width:25%;
+		}
+	}
+
+	@media(min-device-width: 1000px) and (max-device-width:1099px){
+		.button-container-1{
+			width:60%;
+		}
+		.swiper-container {
+			width:45%;
+		}
+
+	}
+
+	@media(min-device-width: 500px) and (max-device-width:999px){
+		.button-container-1{
+			width:70%;
+		}
+		.swiper-container {
+			width:50%;
+		}
+	}
+
+	@media(max-device-width: 499px){
+		.button-container-1{
+			width:100%;
+		}
+
+		.swiper-container {
+			width:80%;
+		}
+	}
 
 /*animations*/
 
