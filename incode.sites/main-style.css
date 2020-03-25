@@ -52,10 +52,13 @@ h1,h2,h3,p{
 	background-color: rgb(253, 165, 2);
 }
 #second{
-	background-color: white;
+	background-image: linear-gradient(rgb(253, 165, 2), rgb(2, 149, 253));
 }
 #third{
 	background-color: rgb(2, 149, 253);
+}
+#forth{
+	background-image: linear-gradient(rgb(2, 149, 253), white);
 }
 .center{
 	display: flex;
@@ -99,12 +102,9 @@ span.anim-3{
 /*swiper*/
 
 .swiper-container {
-
   height: 85%;
-  margin:0;
-  border:3px solid darkblue;
+  width:70%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -199,7 +199,7 @@ span.anim-3{
 		font-size: 7vh;
 		font-family: 'Nunito';
 		text-align: center;
-		color:rgb(253, 165, 2);
+		color:white;
 	}
 
 	.price-container{
@@ -398,7 +398,7 @@ span.anim-3{
 			width:70%;
 		}
 		.swiper-container {
-			width:50%;
+			width:40%;
 		}
 	}
 
