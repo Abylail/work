@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
 html {
 	scroll-behavior: smooth;
 }
 body{
 	margin:0;
+	background-image: url(back.png);
+	background-position: left;
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 h1,h2,h3,p{
 	margin:0;
@@ -49,16 +55,19 @@ h1,h2,h3,p{
 	text-align: center;
 }
 #first{
-	background-color: rgb(253, 165, 2);
+	background-color: rgba(253, 165, 2, 0.85);
 }
 #second{
-	background-image: linear-gradient(rgb(253, 165, 2), rgb(2, 149, 253));
+	background-image: linear-gradient(rgba(253, 165, 2, 0.85), rgba(2, 149, 253, 0.9));
 }
 #third{
-	background-color: rgb(2, 149, 253);
+	background-color: rgba(2, 149, 253, 0.9);
 }
 #forth{
-	background-image: linear-gradient(rgb(2, 149, 253), white);
+	background-image: linear-gradient(rgba(2, 149, 253, 0.9), rgba(255,255,255, 0.8));
+}
+#fifth{
+	background-color: rgba(255,255,255,0.8);
 }
 .center{
 	display: flex;
@@ -201,6 +210,12 @@ span.anim-3{
 		text-align: center;
 		color:white;
 	}
+	.title-4{
+		font-size: 7vh;
+		font-family: 'Nunito';
+		text-align: center;
+		color:rgba(2, 149, 253, 1);
+	}
 
 	.price-container{
 		display: flex;
@@ -227,7 +242,7 @@ span.anim-3{
 		justify-content: space-around;
 		flex-direction: column;
 		margin: 0;
-		margin-left:3vw;
+		padding-inline-start: 30px;
 	}
 	div.price{
 		font-size: 2.5vh;
@@ -277,23 +292,15 @@ span.anim-3{
 	
 
 
-	/*.second_container .container_1 .title{
+/*.second_container .container_1 .title{
 	border: 1px solid black;
 }*/
 
-.second_container .container_1{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .second_container .container_1 p{
-	font-size: 7vh;
-	font-family: 'Nunito';
+	font-size: 6vh;
 	text-align: center;
 	color: rgb(2, 149, 253);
 }
-
 
 .second_container .container_1 p:hover{
 	font-size: 8vh;
@@ -317,18 +324,29 @@ span.anim-3{
 	box-shadow: 0 0 10px rgba(0,0,0,0.6);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-	grid-template-rows: 1fr
+	grid-template-rows: 1fr;
+	background-color: white;
 }
 
+@media (min-width: 940px){
 	.second_container .container_2 .block{
 		display: flex;
 		flex-direction: column;
 	}
 	.second_container .container_2 .block .block_1{
 		height: 30%;
-		font-size: 2vh;
 	}
+}
 
+@media (min-width: 614px) and (max-width: 800px){
+	.second_container .container_2 .block{
+		display: flex;
+		flex-direction: column;
+	}
+	.second_container .container_2 .block .block_1{
+		height: 30%;
+	}
+}
 
 .second_container .container_2 .block:hover{
 	opacity: 0.8;
@@ -346,6 +364,21 @@ span.anim-3{
 	text-align: center;
 	color: white;
 }	
+
+@media (min-width: 300px) and (max-width: 600px){
+	.second_container .container_2 .block .block_1 p{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+	.second_container .container_2 .block .block_1 p{
+		font-size: 14px;
+	}
+}
+
+
+
 .second_container .container_2 .block .img{
 	display: flex;
 	justify-content: center;
