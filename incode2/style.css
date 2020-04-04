@@ -36,8 +36,9 @@ h1,h2,h3,p{
 
 }
 
-/*for header*/
 
+/*for header*/
+@media (min-width: 500px){
 #header{
 	position: fixed;
  	top: 0;
@@ -48,7 +49,68 @@ h1,h2,h3,p{
   	background-color: black;
   	transition: all .4s ease;
   	z-index: 10;
+
+  	display: flex;
+	flex-direction: row;
 }
+.header-container-left{
+	height: 100%;
+	width:35vw;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.header-container-right{
+	height: 100%;
+	width:65vw;
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.header-logo{
+	height: 12vh;
+}
+h2.header-title{
+	font-size: 3vh;
+	color:white;
+}
+a.header-button{
+	color:white;
+	padding: 1.5vh;
+	margin-left:2vw ;
+	margin-right:2vw; 
+
+	font-size: 3vh;
+
+	border-radius:4vh;
+	border: 0.5vh solid white;
+
+	text-decoration: none;
+
+	transition-duration: 1s;
+}
+a.header-button:hover{
+	background-color: white;
+	color:black;
+}
+h3.header-phone{
+	color:white;
+	font-size: 2.7vh;
+	margin-left:2vw; 
+}
+img.header-inst{
+	height: 8vh;
+
+	margin-left:2vw; 
+
+	border-radius: 50%;
+	background-color: white;
+	border:2px solid white;
+	display: none;
+}
+
 
 #header.op:hover{
 	opacity: 1;
@@ -68,9 +130,231 @@ opacity: .5;
 
 
 
+
+
+/*drop menu*/
+.mainmenubtn {
+	height: 100%;
+	padding-right: 2vw;
+	padding-left: 2vw;
+    
+    color: white;
+
+    cursor: pointer;
+
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(65,46,2,1) 95%);
+}
+
+.mainmenubtn:hover {
+
+    }
+    
+.dropdown {
+	height: 100%;
+
+	font-size: 3vh;
+
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+}
+.dropdown-child a {
+	background-color: rgba(65,46,2,1);
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh; 
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+.dropdown-child a:hover{
+	background-color: white;
+	color:black;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.header-menu{
+	height: 100%;
+}
+
+.for-phone{
+	display: none;
+}
+.for-pc{
+	display: block;
+}
+
+}
+
+
+@media (max-width: 500px){
+
+	#header{
+	position: fixed;
+ 	top: 0;
+  	right: 0;
+  	width: 100%;
+  	height: 10vh;
+  	opacity: 1;
+  	background-color: black;
+  	transition: all .4s ease;
+  	z-index: 10;
+
+  	display: flex;
+	flex-direction: row;
+}
+.header-container-left{
+	height: 100%;
+	width:35vw;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.header-container-right{
+	height: 100%;
+	width:65vw;
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.header-logo{
+	height: 10vh;
+}
+h2.header-title{
+	font-size: 2vh;
+	color:white;
+}
+a.header-button{
+	color:white;
+	padding: 1.5vh;
+	margin-left:2vw ;
+	margin-right:2vw; 
+
+	font-size: 3vh;
+
+	border-radius:4vh;
+	border: 0.5vh solid white;
+
+	text-decoration: none;
+
+	transition-duration: 1s;
+}
+a.header-button:hover{
+	background-color: white;
+	color:black;
+}
+h3.header-phone{
+	color:white;
+	font-size: 2.7vh;
+	margin-left:2vw; 
+}
+img.header-inst{
+	height: 8vh;
+
+	margin-left:2vw; 
+
+	border-radius: 50%;
+	background-color: white;
+	border:2px solid white;
+	display: none;
+}
+
+
+#header.op:hover{
+	opacity: 1;
+}
+.op1{
+	opacity: .8;
+}
+.op2{
+opacity: .5;
+}
+#header.op {
+  opacity: .7;
+}
+.out {
+	transform: translateY(-100%);
+}
+
+
+
+
+
+/*drop menu*/
+.mainmenubtn {
+	height: 100%;
+	padding-right: 2vw;
+	padding-left: 2vw;
+    
+    color: white;
+
+    cursor: pointer;
+    background-color: black;
+}
+
+.mainmenubtn:hover {
+
+    }
+    
+.dropdown {
+	height: 100%;
+
+	font-size: 2vh;
+
+    position: relative;
+    display: inline-block;
+
+    background-color: black;
+}
+.dropdown-child {
+    display: none;
+}
+.dropdown-child a {
+	background-color: black;
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh; 
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+    margin:0.3vw;
+
+}
+.dropdown-child a:hover{
+	background-color: white;
+	color:black;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.header-menu{
+	height: 100%;
+}
+
+	.for-phone{
+		display: block;
+	}
+	.for-pc{
+		display: none;
+	}
+}
+
+
+
+
+
+
 /*first-page*/
 #first-page{
 	height: 100vh;
+	width: 100vw;
 }
 .background{
 	background-image:url("back.jpg");
@@ -173,10 +457,13 @@ h2.title-2{
 
 
 
-/*background-gridient*/
+/*background-1*/
 .background-gridient{
-	height: 200vh;
+	height: auto;
 	background: linear-gradient(to top, #fefcea, #c99057);
+
+	padding-top:10vh;
+	padding-bottom: 10vh; 
 }
 
 
@@ -188,12 +475,14 @@ h2.title-2{
 	flex-direction: column;
 }
 .title-box-3{
-	height: 50%;
+	height: 20%;
 }
 h2.title-3{
 	text-align: center;
 	font-size: 10vh;
 	color:white;
+	padding: 3px;
+
 	background-color: black;
 }
 .box-3{
@@ -240,21 +529,117 @@ h2.title-3{
 
 /*forth-page*/
 #forth-page{
-
+	height: auto;
 }
 .title-box-4{
 	height: 30vh;
 }
-h2.title-4{
+h3.title-4{
 	font-size: 10vh;
 	text-align: center;
+	background-color:black;
+	color:white;
+	padding: 3px;
+}
+.price-container{
+	height: auto;
+
+	background-image: url("price-back.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.price-box-distribution{
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	padding:50px;
+
+	display: flex;
+	justify-content: center;
+
+}
+.price-box{
+	width: 300px;
+	height: 350px;
+	border-radius: 20px;
+	margin: 3%;
+
+	background-color: white;
+}
+.price-section-1{
+	height: 25%;
+	background-color:black;
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.price-section-2{
+	height: 60%;
+}
+.price-section-3{
+	height: 15%;
+}
+h4.price-title{
+	color:white;
 }
 
 
+/*background-2*/
+.background-2{
+	background-color: #fefcea;
+	height: auto;
+}
 
 
+/*fifth-page*/
+#fifth-page{
+	height: auto;
+}
+.container-5{
+	width: 100vw;
+	height: auto;
+
+	background-size: cover;
+	background-image: url(motivation.jpg);
+	background-position: center;
+}
 
 
+/*info*/
+#info{
+	height: auto;
+}
+.info-blocks-distribution{
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.info-block{
+	width: 400px;
+	height: 400px;
+	margin: 20px;
+}
+.info-title-box{
+	height: 25%;
+}
+h2.info-title{
+	font-size: 30px;
+}
+.info-text-box{
+	height: 75%;
+}
+.info-text{
+	font-size: 20px;
+	width: 90%;
+}
+
+
+/*footer*/
+#footer{
+	background-color: black;
+}
 
 
 /*animations*/

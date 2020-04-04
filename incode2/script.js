@@ -1,6 +1,5 @@
 var header = document.querySelector('#header');
 var text1 = document.querySelector('#text-box-1');
-var check = document.querySelector('#check');
 
 //opacity after px
 
@@ -24,7 +23,6 @@ document.addEventListener('scroll', function() {
 var srollN = 0;
 
 window.addEventListener('scroll', function() {
-	check.innerHTML = pageYOffset;
 	if(pageYOffset>30 && pageYOffset > scrollN){
 		header.classList.add('out');
 	}
