@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+h1,h2,h3,h4,h5,p{
+	margin: 0;
+}
+span.under{
+	border-bottom: 2px solid white;
+}
+
+
+@media(min-width: 900px){
+	.big-container{
+		margin-top: 80px;
+		display:flex;
+		flex-direction: row;
+		font-family: 'Montserrat';
+		color:#545454;
+		height: 600px;
+	}
+	.container-1{
+		width:50%;
+		border-right:1px solid gray;
+		padding-left: 40px;
+		height: 100%;
+	}
+	.container-2{
+		width:50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+
+}
+@media(max-width: 900px){
+	.big-container{
+		margin-top: 80px;
+		display:flex;
+		flex-direction: column;
+		font-family: 'Montserrat';
+		color:#545454;
+	}
+	.container-1{
+		width:97%;
+		border-bottom:1px solid gray;
+		padding-left: 10px;
+		
+	}
+	.container-2{
+		width:100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 400px;
+	}
+	div.button-insta{
+		text-align: center;
+	}
+	div.button-wp{
+		text-align: center;
+	}
+	
+}
+
+	.title{
+		margin-top: 50px;
+		font-size: 35px;
+		margin-bottom: 45px;
+	}
+	.text{
+		font-size: 20px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		color:black;
+	}
+	h3.contacts{
+		font-size: 20px;
+		text-indent: 20px;
+		color:gray;
+	}
+	a.contacts{
+		font-size: 20px;
+		text-indent: 20px;
+		color:gray;
+		text-decoration: underline;
+		cursor: pointer;
+		padding-left: 20px;
+	}
+	a.contacts:hover{
+		color:#545454;
+	}
+	div.button-wp{
+		margin-top: 30px;
+	}
+	a.button-wp{
+		text-decoration: none;
+		border:4px solid #00994C;
+		border-radius: 30px;
+		padding:10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		font-size: 20px;
+		background-color: #00994C;
+		opacity: .7;
+		color:white;
+	}
+	a.button-wp:hover{
+		opacity: .6;
+	}
+	a.button-insta{
+		text-decoration: none;
+		border:3px solid #BD539D;
+		background-color:#BD539D;
+		color:white;
+		font-size: 20px;
+		padding:7px;
+		padding-left: 17px;
+		padding-right: 17px;
+		border-radius: 30px;
+		text-align: center;
+		opacity: 0.8;
+	}
+	a.button-insta:hover{
+		opacity: .6;
+	}
+	div.button-insta{
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+	h4.phone{
+		font-size: 15px;
+		color:darkgray;
+		font-family: 'Manrope', sans-serif;
+	}
+	#name{
+		width: 70%;
+		min-width: 200px;
+		font-size: 20px;
+		padding:7px;
+		border-radius: 10px;
+		border:4px solid lightgray;
+	}
+	#phone{
+		width: 70%;
+		min-width: 200px;
+		font-size: 20px;
+		padding: 7px;
+		margin-top: 20px;
+		border-radius: 10px;
+		border:4px solid lightgray;
+	}
+	#time{
+		width: 70%;
+		min-width: 200px;
+		font-size: 15px;
+		padding: 7px;
+		margin-top: 20px;
+		border-radius: 10px;
+		border:4px solid lightgray;
+	}
+	#button{
+		background-color: orange;
+		padding: 10px;
+		border-radius: 10px;
+		cursor: pointer;
+		color:white;
+		margin-top: 20px;
+		font-size: 20px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	#button:hover{
+		opacity: .7;
+	}
+	#error{
+		font-family: 'Manrope', sans-serif;
+		color:red;
+		font-size: 15px;
+	}
+	#success{
+		font-family: 'Manrope', sans-serif;
+		color:green;
+		font-size: 20px;
+	}
+	form{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+	}
+
+
+
+/*https://www.instagram.com/incode.sites/?igshid=1p4rk0sj1e8lr*/
+
+
+
